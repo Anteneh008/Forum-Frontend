@@ -48,7 +48,7 @@ const ProfilePictureUpload = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4001/api/upload",
+        `${process.env.REACT_APP_base_url}/api/upload`,
         formData,
         {
           headers: {
@@ -84,7 +84,7 @@ const ProfilePictureUpload = () => {
               <SelectedImage src={selectedFilePreview} /> // Display the selected file preview
             ) : userData?.user?.profilePicture ? (
               <SelectedImage
-                src={`http://localhost:4001/uploads/${userData?.user?.profilePicture}`}
+                src={`${process.env.REACT_APP_base_url}/uploads/${userData?.user?.profilePicture}`}
               />
             ) : (
               <PersonAddAltOutlinedIcon />

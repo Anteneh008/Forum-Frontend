@@ -33,7 +33,7 @@ const QuestionPage = () => {
   const fetchAnswers = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/api/get-answers/${questionId}`
+        `${process.env.REACT_APP_base_url}/api/get-answers/${questionId}`
       );
 
       setAnswers(response.data.data);
@@ -48,7 +48,7 @@ const QuestionPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4001/api/submit-answer",
+        `${process.env.REACT_APP_base_url}/api/submit-answer`,
         formData
       );
 

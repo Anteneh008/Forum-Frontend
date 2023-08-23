@@ -17,7 +17,7 @@ const Home = () => {
       navigate("/login");
     } else {
       // Fetch questions from backend API
-      axios.get(`http://localhost:4001/api/users/question`).then((response) => {
+      axios.get(`${process.env.REACT_APP_base_url}/api/users/question`).then((response) => {
         setQuestions(response.data.data);
       });
     }
