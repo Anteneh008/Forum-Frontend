@@ -14,22 +14,22 @@ const Footer = () => {
             alt=""
           />
           <Icons>
-            <a href="">
+            <a href="#">
               <FacebookRoundedIcon />
             </a>
-            <a href="">
+            <a href="#">
               <InstagramIcon />
             </a>
-            <a href="">
+            <a href="#">
               <YouTubeIcon />
             </a>
           </Icons>
         </LogoIcon>
         <UsefulLink>
           <h3>Useful Link</h3>
-          <a href="">How it works</a>
-          <a href="">Terms of service</a>
-          <a href="">Privacy Policy</a>
+          <a href="#">How it works</a>
+          <a href="#">Terms of service</a>
+          <a href="#">Privacy Policy</a>
         </UsefulLink>
         <ContactInfo>
           <h3>Contact Info</h3>
