@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,22 +15,22 @@ const Footer = () => {
             alt=""
           />
           <Icons>
-            <a href="#">
+            <Link to="#">
               <FacebookRoundedIcon />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <InstagramIcon />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <YouTubeIcon />
-            </a>
+            </Link>
           </Icons>
         </LogoIcon>
         <UsefulLink>
           <h3>Useful Link</h3>
-          <a href="#">How it works</a>
-          <a href="#">Terms of service</a>
-          <a href="#">Privacy Policy</a>
+          <Link to="#">How it works</Link>
+          <Link to="#">Terms of service</Link>
+          <Link to="#">Privacy Policy</Link>
         </UsefulLink>
         <ContactInfo>
           <h3>Contact Info</h3>

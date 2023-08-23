@@ -104,8 +104,8 @@ const SignUp = () => {
             <br />
 
           <small>
-            I agree to the <a href="#">Privacy policy</a> and
-            <a href="#"> term of service.</a>
+            I agree to the <Link to="#">Privacy policy</Link> and
+            <Link to="#"> term of service.</Link>
           </small>
             <button>Agree and Join</button>
           </form>
