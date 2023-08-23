@@ -10,13 +10,13 @@ import ProfilePictureUpload from "../../ProfilePictureUpload/ProfilePictureUploa
 const Home = () => {
   const navigate = useNavigate();
   const [userData, setUserData] = useContext(UserContext);
-  const [questions, setQuestions] = useState([]); // State to hold questions
+  const [questions, setQuestions] = useState([]); 
 
   useEffect(() => {
     if (!userData.user) {
       navigate("/login");
     } else {
-      // Fetch questions from backend API
+ 
       axios.get(`${process.env.REACT_APP_base_url}/api/users/question`).then((response) => {
         setQuestions(response.data.data);
       });
@@ -25,9 +25,8 @@ const Home = () => {
 
   const formatTimeDifference = (timestamp) => {
     const currentTime = new Date();
-    // console.log(currentTime)
+
     const postedTime = new Date(timestamp);
-    // console.log(postedTime)
 
     const timeDifference = currentTime - postedTime;
     const minutes = Math.floor(timeDifference / (1000 * 60));
